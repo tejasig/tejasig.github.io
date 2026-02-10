@@ -1,19 +1,13 @@
 :root{
-  /* Background */
   --bg0:#0b0714;
   --bg1:#140b24;
 
-  /* Violet glow */
   --violet1: rgba(170, 90, 255, 0.35);
   --violet2: rgba(140, 60, 210, 0.30);
 
-  /* Top bar */
-  --bar: rgba(40, 18, 70, 0.95);
+  --bar: rgba(40, 18, 70, 0.96);
 
-  /* Text */
   --text: rgba(255,255,255,0.92);
-
-  /* Icons */
   --icon: rgba(255,255,255,0.75);
   --iconHover: rgba(255,255,255,1);
 }
@@ -32,38 +26,51 @@ body{
   min-height:100vh;
 }
 
-/* ===== TOP BAR ===== */
+/* Top bar */
 .topbar{
   width:100%;
   background: var(--bar);
 }
 
 .nav{
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 16px 24px;
-  display: flex;
-  justify-content: flex-start;
-  gap: 32px;
+  max-width:900px;
+  margin:0 auto;
+  padding:16px 24px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.site-name{
+  font-size:15.5px;
+  font-weight:500;
+  color:rgba(255,255,255,0.9);
+  text-decoration:none;
+  letter-spacing:0.3px;
+}
+
+.nav-links{
+  display:flex;
+  gap:32px;
 }
 
 .nav-link{
-  font-size: 15px;
-  color: rgba(255,255,255,0.8);
-  text-decoration: none;
-  letter-spacing: 0.3px;
+  font-size:15px;
+  color:rgba(255,255,255,0.75);
+  text-decoration:none;
+  letter-spacing:0.3px;
 }
 
 .nav-link:hover{
-  color: rgba(255,255,255,1);
+  color:rgba(255,255,255,1);
 }
 
-/* ===== PAGE LAYOUT ===== */
+/* Layout */
 .page{
-  width: min(900px, 92%);
-  margin: 0 auto;
-  padding: 44px 0 32px;
-  min-height: calc(100vh - 60px);
+  width:min(900px, 92%);
+  margin:0 auto;
+  padding:44px 0 32px;
+  min-height:calc(100vh - 64px);
   display:flex;
   flex-direction:column;
   align-items:center;
@@ -71,8 +78,6 @@ body{
 
 /* Photo */
 .photo-wrap{
-  display:flex;
-  justify-content:center;
   margin:14px 0 22px;
 }
 
@@ -95,16 +100,15 @@ body{
 
 .hello{
   font-size:32px;
-  letter-spacing:-0.3px;
-  margin:0 0 16px;
+  margin-bottom:16px;
 }
 
 p{
-  margin:0 0 16px;
   font-size:16.8px;
+  margin-bottom:16px;
 }
 
-/* Footer icons */
+/* Footer */
 .footer{
   margin-top:auto;
   padding-top:22px;
@@ -114,17 +118,15 @@ p{
   display:flex;
   justify-content:center;
   gap:18px;
-  padding:14px 0 0;
 }
 
 .icon-link{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
   width:36px;
   height:36px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   color:var(--icon);
-  text-decoration:none;
 }
 
 .icon-link:hover{
@@ -138,11 +140,8 @@ p{
 
 /* Mobile */
 @media (max-width:520px){
-  .nav{
-    padding:14px 18px;
-  }
-
   .hello{ font-size:28px; }
   .photo{ width:132px; height:132px; }
   p{ font-size:16px; }
 }
+
