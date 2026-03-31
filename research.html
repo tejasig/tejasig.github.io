@@ -3,173 +3,85 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Research – Tejasi Gupta</title>
-  <meta name="description" content="Research projects by Tejasi Gupta." />
-  <link rel="stylesheet" href="./style.css" />
+  <title>Research — Tejasi Gupta</title>
+  <meta
+    name="description"
+    content="Research projects of Tejasi Gupta in computational biophysics, graph-theoretic biomolecular analysis, and computational drug discovery."
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-
-  <!-- Top bar -->
   <header class="topbar">
     <nav class="nav">
       <a href="/" class="site-name">Tejasi Gupta</a>
+
       <div class="nav-links">
         <a href="/" class="nav-link">Home</a>
         <a href="research.html" class="nav-link">Research</a>
+        <a href="interests.html" class="nav-link">Other Interests</a>
       </div>
     </nav>
   </header>
 
   <main class="page">
-
-    <section class="content">
-
-      <div class="hello">Research</div>
-
-      <hr style="margin:32px 0; opacity:0.2;">
-
-      <!-- Project 1 -->
-      <div class="project-area">
-
-        <h2>
-          Understanding the Structural Organization of Biomolecular Assemblies
-          Using Graph-Theoretic Techniques
-        </h2>
-
-        <p class="project-meta">
-          <strong>Computational Biophysics</strong>
-        </p>
-
-        <p>
-          Developed a Python-based computational pipeline to construct and analyse
-          graph representations of biomolecular assemblies derived from structural
-          (PDB) data. Implemented distance-based interaction modelling, adjacency
-          construction, and network-theoretic analysis to investigate structural
-          organisation in biomolecular complexes.
-        </p>
-
-        <p class="project-meta">
-          Supervised by Dr. Debayan Chakraborty<br>
-          Department of Theoretical Physics<br>
-          The Institute of Mathematical Sciences (IMSc), Chennai
-        </p>
-
-        <p class="project-note">
-          Full implementation maintained in a private GitHub research repository.<br>
-          Public overview:
-          <a href="https://github.com/tejasig/biomolecular-graph-analysis"
-             target="_blank"
-             style="color:rgba(170,90,255,0.9); text-decoration:none;">
-            biomolecular-graph-analysis
-          </a>
-        </p>
-
-      </div>
-
-      <hr style="margin:32px 0; opacity:0.2;">
-
-      <!-- Project 2 -->
-      <div class="project-area">
-
-        <h2>
-          Anti-cancer Drug Design: Targeting ABL1
-        </h2>
-
-        <p class="project-meta">
-          <strong>Cheminformatics · Computational Drug Discovery</strong>
-        </p>
-
-        <p>
-          Designed and implemented a ligand-based virtual screening workflow to identify
-          candidate inhibitors of the ABL1 tyrosine kinase. The pipeline integrates
-          physicochemical filtering, PAINS removal, molecular fingerprinting (MACCS and Morgan),
-          similarity screening against a reference inhibitor (Dasatinib), enrichment evaluation,
-          Butina clustering, maximum common substructure analysis, and a supervised neural
-          network classifier to prioritise active compounds.
-        </p>
-
-        <p class="project-meta">
-          <strong>Independent research project</strong><br>
-          Awarded <strong>2nd Position</strong> for paper presentation at the
-          <em>International Conference “Advances in Pharmaceutical Sciences: Bridging Academia and Industry”</em>,
-          St. Stephen’s College.
-        </p>
-
-        <p class="project-note">
-          Public repository:
-          <a href="https://github.com/tejasig/abl1-virtual-screening-ml"
-             target="_blank"
-             style="color:rgba(170,90,255,0.9); text-decoration:none;">
-            abl1-virtual-screening-ml
-          </a>
-        </p>
-
-      </div>
-
+    <section class="section page-intro">
+      <h1 class="page-title">Research</h1>
+      <p class="page-description">
+        A selection of projects and research interests in computational biophysics,
+        biomolecular modelling, graph-based structural analysis, and computational approaches
+        to molecular design.
+      </p>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="icon-row">
+    <section class="section research-card">
+      <h2 class="research-title">
+        Understanding the Structural Organization of Biomolecular Assemblies Using Graph-Theoretic Techniques
+      </h2>
 
-        <!-- LinkedIn -->
-        <a class="icon-link"
-           href="https://www.linkedin.com/in/tejasi-gupta-959815156/"
-           target="_blank"
-           aria-label="LinkedIn">
-          <svg class="icon" viewBox="0 0 24 24">
-            <path fill="currentColor"
-              d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85
-              0-2.13 1.45-2.13 2.95v5.66H9.35V9h3.41v1.56h.05c.47-.9
-              1.63-1.85 3.36-1.85 3.59 0 4.25 2.36 4.25
-              5.43v6.31ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14
-              2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.56V9
-              h3.56v11.45Z"/>
-          </svg>
-        </a>
+      <img
+        src="assets/imsc.jpeg"
+        alt="Understanding the structural organization of biomolecular assemblies using graph-theoretic techniques"
+        class="research-img"
+      />
 
-        <!-- GitHub -->
-        <a class="icon-link"
-           href="https://github.com/tejasig"
-           target="_blank"
-           aria-label="GitHub">
-          <svg class="icon" viewBox="0 0 24 24">
-            <path fill="currentColor"
-              d="M12 .5C5.65.5.5 5.65.5 12
-              c0 5.1 3.29 9.43 7.86 10.96.57.1.78-.25.78-.55
-              0-.27-.01-1.17-.02-2.13-3.2.7-3.87-1.54-3.87-1.54
-              -.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7
-              1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.67 1.25 3.32.96
-              .1-.74.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.69
-              0-1.26.45-2.3 1.18-3.11-.12-.29-.51-1.46.11-3.05
-              0 0 .97-.31 3.18 1.19a10.9 10.9 0 0 1 5.8 0
-              C17.83 4.96 18.8 5.27 18.8 5.27c.62 1.59.23 2.76.11 3.05
-              .73.81 1.18 1.85 1.18 3.11 0 4.42-2.7 5.4-5.27 5.68
-              .41.35.77 1.03.77 2.08 0 1.5-.01 2.71-.01 3.08
-              0 .3.21.66.79.55A11.51 11.51 0 0 0 23.5 12
-              C23.5 5.65 18.35.5 12 .5Z"/>
-          </svg>
-        </a>
+      <p>
+        This work focuses on representing biomolecular systems as graphs in order to study
+        structural organization, connectivity, and patterns of interaction in a systematic way.
+        The broader aim is to uncover features of biomolecular assemblies that may not be
+        immediately visible from raw structural coordinates alone.
+      </p>
+    </section>
 
-        <!-- Email -->
-        <a class="icon-link"
-           href="mailto:tejasi1202@gmail.com"
-           aria-label="Email">
-          <svg class="icon" viewBox="0 0 24 24">
-            <path fill="currentColor"
-              d="M20 4H4c-1.1 0-2 .9-2
-              2v12c0 1.1.9 2 2
-              2h16c1.1 0 2-.9
-              2-2V6c0-1.1-.9-2-2-2Zm0
-              4-8 5-8-5V6l8
-              5 8-5Z"/>
-          </svg>
-        </a>
+    <section class="section research-card">
+      <h2 class="research-title">Anti-cancer Drug Design: Targeting ABL1</h2>
+      <p class="research-subtitle">Machine Learning</p>
+      <p class="research-tags">Cheminformatics · Computational Drug Discovery</p>
 
+      <div class="research-img-row">
+        <img
+          src="assets/abl.png"
+          alt="ABL1-related structural image"
+          class="research-img"
+        />
+        <img
+          src="assets/ml.png"
+          alt="Machine learning and computational drug discovery image"
+          class="research-img"
+        />
       </div>
-    </footer>
 
+      <p>
+        This project explores computational approaches to targeting the ABL1 kinase in cancer.
+        It combines molecular and structural considerations with machine learning-driven ideas
+        from cheminformatics and computational drug discovery to study molecular features,
+        interactions, and design strategies relevant to anti-cancer therapeutics.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Tejasi Gupta</p>
+    </footer>
   </main>
 </body>
 </html>
