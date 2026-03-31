@@ -246,18 +246,12 @@ body{
   font-weight:600;
 }
 
-.research-subtitle{
-  margin-top:-6px;
-  margin-bottom:4px;
-  font-size:1rem;
-  color:rgba(255,255,255,0.88);
-  font-weight:500;
-}
-
 .research-tags{
+  margin-top:-4px;
   margin-bottom:18px;
-  color:var(--muted);
-  font-size:0.95rem;
+  color:rgba(255,255,255,0.85);
+  font-size:1.05rem;
+  font-weight:500;
   letter-spacing:0.01em;
 }
 
@@ -383,7 +377,6 @@ body{
   .hero-description,
   .section p,
   .current-work li,
-  .research-subtitle,
   .research-tags{
     font-size:0.98rem;
   }
