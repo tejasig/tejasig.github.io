@@ -193,11 +193,9 @@ body{
   box-shadow:0 12px 40px rgba(0,0,0,0.18);
 }
 
+.section h1,
 .section h2{
   margin:0 0 16px;
-  font-size:1.2rem;
-  font-weight:600;
-  letter-spacing:0.01em;
 }
 
 .section p{
@@ -223,6 +221,66 @@ body{
 
 .current-work li:last-child{
   margin-bottom:0;
+}
+
+/* Research page intro */
+.page-title{
+  font-size:clamp(2rem, 4vw, 3rem);
+  line-height:1.1;
+  letter-spacing:-0.02em;
+}
+
+.page-description{
+  color:var(--muted);
+  max-width:65ch;
+}
+
+/* Research cards */
+.research-card{
+  overflow:hidden;
+}
+
+.research-title{
+  font-size:1.35rem;
+  line-height:1.3;
+  font-weight:600;
+}
+
+.research-subtitle{
+  margin-top:-6px;
+  margin-bottom:4px;
+  font-size:1rem;
+  color:rgba(255,255,255,0.88);
+  font-weight:500;
+}
+
+.research-tags{
+  margin-bottom:18px;
+  color:var(--muted);
+  font-size:0.95rem;
+  letter-spacing:0.01em;
+}
+
+/* Research images */
+.research-img{
+  width:100%;
+  display:block;
+  border-radius:16px;
+  margin:16px 0 18px;
+  box-shadow:0 10px 40px rgba(0,0,0,0.25);
+}
+
+.research-img-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  margin:16px 0 18px;
+}
+
+.research-img-row .research-img{
+  margin:0;
+  height:100%;
+  object-fit:cover;
 }
 
 /* Footer */
@@ -260,11 +318,6 @@ body{
 .icon{
   width:18px;
   height:18px;
-}
-
-/* General text defaults */
-p{
-  font-size:16px;
 }
 
 /* Tablet */
@@ -329,7 +382,9 @@ p{
 
   .hero-description,
   .section p,
-  .current-work li{
+  .current-work li,
+  .research-subtitle,
+  .research-tags{
     font-size:0.98rem;
   }
 
@@ -344,5 +399,13 @@ p{
 
   .hero-actions{
     flex-direction:column;
+  }
+
+  .research-img-row{
+    grid-template-columns:1fr;
+  }
+
+  .research-title{
+    font-size:1.18rem;
   }
 }
