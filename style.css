@@ -25,6 +25,8 @@ img {
   display: block;
 }
 
+/* ================= NAVBAR ================= */
+
 .topbar {
   position: sticky;
   top: 0;
@@ -65,11 +67,15 @@ img {
   color: #ffffff;
 }
 
+/* ================= LAYOUT ================= */
+
 .page {
   max-width: 1100px;
   margin: 0 auto;
   padding: 40px 24px 60px;
 }
+
+/* ================= HERO ================= */
 
 .hero {
   min-height: 82vh;
@@ -86,22 +92,31 @@ img {
   align-items: center;
 }
 
+/* ✅ FIXED PHOTO (no purple ring) */
 .photo-wrap {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  padding: 6px;
-  background: linear-gradient(135deg, #b18cff, #6f59c7);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.28);
+  padding: 0;
+  background: none;
 }
 
+/* ✅ CLEAN PHOTO + HOVER GLOW */
 .photo {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #120d23;
+  border: 3px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.photo:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(140, 120, 255, 0.35);
+}
+
+/* ================= ICONS ================= */
 
 .icon-row {
   display: flex;
@@ -137,6 +152,8 @@ img {
   height: 20px;
 }
 
+/* ================= HERO TEXT ================= */
+
 .hero-title {
   font-size: 3rem;
   line-height: 1.1;
@@ -162,6 +179,8 @@ img {
   flex-wrap: wrap;
   margin-top: 28px;
 }
+
+/* ================= BUTTONS ================= */
 
 .button {
   display: inline-block;
@@ -190,6 +209,8 @@ img {
   background: rgba(255, 255, 255, 0.08);
 }
 
+/* ================= SECTIONS ================= */
+
 .section {
   margin-top: 48px;
 }
@@ -201,30 +222,7 @@ img {
   color: #ffffff;
 }
 
-.current-work ul,
-.about p,
-.research-card p,
-.research-card ul {
-  color: #ebe5fb;
-}
-
-.current-work ul,
-.research-card ul {
-  padding-left: 22px;
-}
-
-.current-work li,
-.research-card li {
-  margin-bottom: 10px;
-}
-
-.about p {
-  margin-bottom: 18px;
-}
-
-.page-title {
-  margin-bottom: 8px;
-}
+/* ================= RESEARCH / PROJECT CARDS ================= */
 
 .research-card {
   background: rgba(255, 255, 255, 0.05);
@@ -240,29 +238,17 @@ img {
 
 .research-title {
   font-size: 1.5rem;
-  line-height: 1.35;
   margin-bottom: 12px;
-  color: #ffffff;
 }
 
-.research-tags {
-  color: #cabdf2;
-  font-size: 0.98rem;
-  margin-bottom: 10px;
-}
-
-.project-meta {
+.project-meta,
+.project-note {
   color: #ddd3f8;
   margin-bottom: 12px;
 }
 
-.project-note {
-  color: #efe9ff;
-  margin-bottom: 14px;
-}
-
 .project-links {
-  margin: 16px 0 18px;
+  margin: 16px 0;
 }
 
 .project-links a {
@@ -274,38 +260,28 @@ img {
   color: #ffffff;
 }
 
-.repo-private {
-  color: #d9d0f5;
-}
-
-.research-media {
-  margin-top: 18px;
-}
-
-.single-media {
-  display: flex;
-  justify-content: center;
-}
-
-.dual-media {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-  align-items: center;
-}
+/* ================= IMAGES ================= */
 
 .research-img {
   width: 100%;
   border-radius: 12px;
 }
 
+/* ✅ GIF + IMAGE ENHANCEMENT */
 .research-img-small {
   max-width: 500px;
   display: block;
   margin: 20px auto;
-  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.28);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease;
 }
+
+.research-img-small:hover {
+  transform: scale(1.02);
+}
+
+/* ================= FOOTER ================= */
 
 .footer {
   margin-top: 56px;
@@ -315,31 +291,12 @@ img {
   color: #d7cef4;
 }
 
-.footer p {
-  margin-top: 10px;
-}
+/* ================= RESPONSIVE ================= */
 
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
-    gap: 30px;
     text-align: center;
-    min-height: auto;
-    padding-top: 20px;
-  }
-
-  .hero-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hero-description {
-    max-width: 100%;
-  }
-
-  .hero-actions {
-    justify-content: center;
   }
 
   .nav {
@@ -350,47 +307,21 @@ img {
   .nav-links {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 16px;
-  }
-
-  .dual-media {
-    grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 600px) {
-  .page {
-    padding: 28px 18px 44px;
-  }
-
   .photo-wrap {
-    width: 210px;
-    height: 210px;
+    width: 200px;
+    height: 200px;
   }
 
   .hero-title {
-    font-size: 2.35rem;
-  }
-
-  .section h2,
-  .page-title {
-    font-size: 1.7rem;
-  }
-
-  .research-card {
-    padding: 22px;
-  }
-
-  .research-title {
-    font-size: 1.3rem;
+    font-size: 2.3rem;
   }
 
   .button {
     width: 100%;
     text-align: center;
-  }
-
-  .hero-actions {
-    width: 100%;
   }
 }
